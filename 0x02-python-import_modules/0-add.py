@@ -1,5 +1,12 @@
 #!/usr/bin/python3
-from add_0 import add
+def add(a, b):
+    return a + b
+
+# main program
 a = 1
 b = 2
-print("{0} + {1} = {2}".format(a, b, add(a, b)))
+
+from add_0 import add
+
+result = add(a, b)
+print("{} + {} = {}".format(a, b, result))
